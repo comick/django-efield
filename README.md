@@ -14,13 +14,13 @@ Usage
 
 `{% load efield %}`
 
-3. Whant you have a filed to be editable use:
+3. When you want a filed to be editable use:
 
 `{% efield obj.field %}`
 
 instead of:
 
-`{ obj.field }`
+`{{ obj.field }}`
 
 4. Enjoy and contribute.
 
