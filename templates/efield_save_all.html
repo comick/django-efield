@@ -1,0 +1,5 @@
+
+<div class="efield-save-all efield-hidden {% if group %}efield-group-{{ group|safe }}{% else %}efield-save-all-general{% endif %}">
+	<input type="submit" value="Save all" onclick="Efield.save_all({% if group %}'{{ group|safe }}'{% endif %})"/>
+</div>
+

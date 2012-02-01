@@ -1,0 +1,15 @@
+
+<!-- Field -->
+<img src="{{ value }}" onclick="Efield.edit('ef{{ ef_id }}'{% if group_key %}, '{{ group_key|safe }}'{% endif %})" id="ef{{ ef_id }}v" class="efield">
+
+<!-- Form -->
+<form onsubmit="Efield.save('ef{{ ef_id }}'{% if group_key %}, '{{ group_key|safe }}'{% endif %}); return false" id="ef{{ ef_id }}f" class="{% if group_key %}efield-group-{{ group_key|safe }} {% endif %}efield-form efield-hidden"> 
+	<input type="hidden" name="model" value="{{ model }}" />
+	<input type="hidden" name="object_id" value="{{ object_id }}" />
+	<input type="hidden" name="field" value="{{ name }}" />
+	{% for field in form %}
+	{{ field }}
+	{% endfor %}
+	<input type="submit" value="Salva" />
+	<div class="efield-error"></div>
+</form>

@@ -1,0 +1,24 @@
+.efield {
+	display: block;
+}
+
+.efield:hover {
+	background-color: #ffc;
+	cursor: pointer;
+}
+
+.efield-save-all {
+	background-color: #ffc;
+}
+
+.efield-form {
+	display: block;
+}
+
+.efield-error {
+	color: red;
+}
+
+.efield-hidden {
+	display: none;
+}
